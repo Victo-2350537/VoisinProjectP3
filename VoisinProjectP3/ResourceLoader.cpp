@@ -2,6 +2,9 @@
 #include <fstream>
 #include <sstream>
 
+#include <iostream>
+
+
 ResourceLoader::ResourceLoader(const std::string& fichier_csv) {
     charger_donnees(fichier_csv);
 }
@@ -21,11 +24,23 @@ void ResourceLoader::charger_donnees(const std::string& fichier_csv) {
 }
 
 std::vector<std::vector<std::string>> ResourceLoader::getTrainData(double k) {
-    size_t split_index = static_cast<size_t>(data.size() * k);
+    double split_index = (data.size() * k);
     return std::vector<std::vector<std::string>>(data.begin(), data.begin() + split_index);
 }
 
 std::vector<std::vector<std::string>> ResourceLoader::getTestData(double k) {
-    size_t split_index = static_cast<size_t>(data.size() * k);
+    double split_index = (data.size() * k);
     return std::vector<std::vector<std::string>>(data.begin() + split_index, data.end());
 }
+
+Noeud* ResourceLoader::getTrainDataLinked(double k) {
+    
+}
+
+Noeud* ResourceLoader::getTestDataLinked(double k) { 
+    
+}
+
+
+
+    

@@ -18,13 +18,42 @@ int main() {
 
         // Test de ResourceLoader
         ResourceLoader loader("./binary-winequality-white.csv");
-        auto trainData = loader.getTrainData(0.8);
-        auto testData = loader.getTestData(0.8);
+        //auto trainData = loader.getTrainData(0.8);
+        //auto testData = loader.getTestData(0.8);
 
-        std::cout << "Train data size: " << trainData.size() << std::endl;
-        std::cout << "Test data size: " << testData.size() << std::endl;
+
+        //std::cout << "Train data size: " << trainData.size() << std::endl;
+        //std::cout << "Test data size: " << testData.size() << std::endl;
+
+        // Test TestData (Code Modifié provenant de https://www.geeksforgeeks.org/vector-of-vectors-in-c-stl-with-examples/)
+        //std::cout << "Train data: \n";
+        //for (int i = 0; i < trainData.size(); i++) {
+        //    for (int j = 0; j < trainData[i].size(); j++)
+        //        std::cout << trainData[i][j] << " ";
+        //    std::cout << std::endl;
+        //}
+
+
+        // Test TrainData (Code Modifié provenant de https://www.geeksforgeeks.org/vector-of-vectors-in-c-stl-with-examples/)
+        //std::cout << "Test data: \n";
+        //for (int i = 0; i < testData.size(); i++) {
+        //    for (int j = 0; j < testData[i].size(); j++)
+        //        std::cout << testData[i][j] << " ";
+        //    std::cout << std::endl;
+        //}
+
+        ;
+
+
 
         return 0;
+
+        
+
+    
+        
+        
+
 
 
     }
